@@ -34,10 +34,8 @@ public class PropertyValuesFiller {
                 consumerField.setAccessible(true);
                 consumerField.set(consumer, Value);
 
-            } catch (NoSuchFieldException e) {
+            } catch (NoSuchFieldException | IllegalAccessException e) {
                 continue;
-            } catch (IllegalAccessException e) {
-                throw new RuntimeException(e);
             }
         }
     }
