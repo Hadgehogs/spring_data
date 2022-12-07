@@ -4,28 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91029b4-ba2d-4ec7-89bb-d0647ca0d870" name="Changes" comment="Init commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/dao/BookingDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/dao/ClientDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/dto/BookingDtoRq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/dto/BookingDtoRs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/entity/Booking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/entity/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/mapper/BookingMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/mapper/ClientMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/hotel/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/hotel/mapper/BookingMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/hotel/mapper/ClientMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/hotel/mapper/RoomMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/hotel/service/HotelServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application.yaml" afterDir="false" />
+    <list default="true" id="c91029b4-ba2d-4ec7-89bb-d0647ca0d870" name="Changes" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotel/controller/HotelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotel/controller/HotelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotel/core/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotel/core/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotel/dto/RoomDtoRq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotel/dto/RoomDtoRq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotel/entity/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotel/entity/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotel/mapper/RoomMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotel/mapper/RoomMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +55,9 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Java_Projects/spring_data/src/test/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
@@ -95,7 +79,7 @@
       <recent name="org.hotel.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RoomMapperTest and 3 more">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.hotel.App" />
       <module name="spring_data" />
@@ -181,9 +165,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.RoomMapperTest and 3 more" />
         <item itemvalue="Maven.spring_data [test]" />
-        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.HotelServiceTest.deleteBookingByNumber" />
         <item itemvalue="JUnit.HotelServiceTest.getClientBookings" />
       </list>
@@ -212,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670260453703</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial commit">
+      <created>1670434739442</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670434739442</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,23 +219,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/hotel/service/HotelServiceTest.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/hotel/service/HotelServiceTest.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/spring_data$App.ic" NAME="App Coverage Results" MODIFIED="1670347901182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
