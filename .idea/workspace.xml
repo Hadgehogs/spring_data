@@ -4,26 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91029b4-ba2d-4ec7-89bb-d0647ca0d870" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/controller/HotelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/core/PropertyValuesFiller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/core/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/dao/RoomDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/dto/RoomDtoRq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/entity/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/entity/RoomType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/mapper/RoomMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/task.txt" afterDir="false" />
+    <list default="true" id="c91029b4-ba2d-4ec7-89bb-d0647ca0d870" name="Changes" comment="Init commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/dao/BookingDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/dao/ClientDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/dto/BookingDtoRq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/dto/BookingDtoRs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/entity/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/entity/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/mapper/BookingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/mapper/ClientMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/hotel/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/hotel/mapper/BookingMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/hotel/mapper/ClientMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/hotel/mapper/RoomMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/hotel/service/HotelServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotel/controller/HotelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotel/controller/HotelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotel/core/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotel/core/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotel/dto/RoomDtoRq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotel/dto/RoomDtoRq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotel/entity/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotel/entity/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotel/mapper/RoomMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotel/mapper/RoomMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +55,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -66,21 +68,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Java_Projects/spring_data/src/test/resources&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.hotel.dao" />
       <recent name="org.hotel.entity" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Java_Projects\spring_data\src\test\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.hotel.controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.hotel.dto" />
+      <recent name="org.hotel.mapper" />
+      <recent name="org.hotel.dao" />
+      <recent name="org.hotel.entity" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RoomMapperTest and 3 more">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.hotel.App" />
       <module name="spring_data" />
@@ -94,9 +109,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HotelServiceTest.deleteBookingByNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hotel.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hotel.service" />
+      <option name="MAIN_CLASS_NAME" value="org.hotel.service.HotelServiceTest" />
+      <option name="METHOD_NAME" value="deleteBookingByNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HotelServiceTest.getClientBookings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hotel.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hotel.service" />
+      <option name="MAIN_CLASS_NAME" value="org.hotel.service.HotelServiceTest" />
+      <option name="METHOD_NAME" value="getClientBookings" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoomMapperTest and 3 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_data" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="org.hotel.mapper.RoomMapperTest" />
+        <pattern testClass="org.hotel.service.HotelServiceTest" />
+        <pattern testClass="org.hotel.mapper.ClientMapperTest" />
+        <pattern testClass="org.hotel.mapper.BookingMapperTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="spring_data [test]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="test" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.RoomMapperTest and 3 more" />
+        <item itemvalue="Maven.spring_data [test]" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.HotelServiceTest.deleteBookingByNumber" />
+        <item itemvalue="JUnit.HotelServiceTest.getClientBookings" />
       </list>
     </recent_temporary>
   </component>
@@ -109,6 +198,21 @@
       <option name="presentableId" value="Default" />
       <updated>1670221886475</updated>
     </task>
+    <task id="LOCAL-00001" summary="Init commit">
+      <created>1670260119020</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670260119020</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Init commit">
+      <created>1670260453703</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670260453703</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,25 +226,29 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/hotel/service/HotelService.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/src/test/java/org/hotel/service/HotelServiceTest.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/hotel/service/HotelService.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/hotel/mapper/RoomMapper.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/src/test/java/org/hotel/service/HotelServiceTest.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spring_data$App.ic" NAME="App Coverage Results" MODIFIED="1670347901182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.hotel.*</FILTER>
+    </SUITE>
   </component>
 </project>

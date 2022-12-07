@@ -5,19 +5,20 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Room {
+public class Client {
     @Id
     private String name;
 
     @Column(nullable = false)
     @NonNull
-    @Enumerated(EnumType.STRING)
-    private RoomType roomType;
+    private String email;
 
 }

@@ -10,7 +10,7 @@ public class RoomMapper {
 
     public Room CastFromDto(RoomDtoRq roomDtoRq) {
         Room room = new Room();
-        PropertyValuesFiller.FillPropertyValues(room, roomDtoRq,null, "name");
+        PropertyValuesFiller.FillPropertyValues(room, roomDtoRq);
         return room;
     }
 

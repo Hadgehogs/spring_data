@@ -6,12 +6,13 @@ import org.springframework.http.ResponseEntity;
 
 @Data
 public class Result {
-    public static ResponseEntity castResponseEntityFromResult(Result result) {
-        ResponseEntity responseEntity;
+    public static ResponseEntity<String> castResponseEntityFromResult(Result result) {
+        ResponseEntity<String> responseEntity;
         if (result.isResult()) {
             responseEntity = new ResponseEntity<>("", HttpStatus.OK);
         } else {
             responseEntity = new ResponseEntity<>(result.getErrorDescription(), HttpStatus.BAD_REQUEST);
+
         }
         return responseEntity;
     }
