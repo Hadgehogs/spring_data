@@ -7,7 +7,6 @@ import org.hotel.dao.ClientDao;
 import org.hotel.dao.RoomDao;
 import org.hotel.dto.BookingDtoRq;
 import org.hotel.dto.BookingDtoRs;
-import org.hotel.dto.RoomDtoRq;
 import org.hotel.entity.Booking;
 import org.hotel.entity.Client;
 import org.hotel.entity.Room;
@@ -31,9 +30,9 @@ import java.util.List;
 import java.util.Optional;
 
 @SpringBootTest
-public class HotelServiceTest {
+public class BookingServiceTest {
     @Autowired
-    HotelService hotelService;
+    BookingService bookingService;
     @MockBean
     RoomMapper roomMapper;
     @MockBean
@@ -71,20 +70,6 @@ public class HotelServiceTest {
     }
 
     @Test
-    public void createRoom() {
-        RoomDtoRq roomDtoRq=new RoomDtoRq("777", RoomType.LUX);
-        Room actual=new Room(roomDtoRq.getName(),roomDtoRq.getRoomType());
-        Mockito.when(roomMapper.CastFromDto(roomDtoRq)).thenReturn(actual);
-        Result result = hotelService.createRoom(roomDtoRq);
-        Assertions.assertTrue(result.isResult());
-
-        Optional<Room> expectedOptional=roomDao.findById(actual.getName());
-        Assertions.assertTrue(expectedOptional.isPresent());
-        Room expected=expectedOptional.get();
-        Assertions.assertEquals(expected,actual);
-    }
-
-    @Test
     @SneakyThrows
     public void createBooking() {
 
@@ -94,7 +79,7 @@ public class HotelServiceTest {
         BookingDtoRq bookingDtoRq=new BookingDtoRq(testRoom.getName(),beginDate,endDate,testClient.getName(),testClient.getEmail());
         Booking actual = new Booking(null,testRoom,beginDate,endDate,testClient);
         Mockito.when(bookingMapper.CastFromDto(bookingDtoRq)).thenReturn(actual);
-        Result result = hotelService.createBooking(bookingDtoRq);
+        Result result = bookingService.createBooking(bookingDtoRq);
         Assertions.assertTrue(result.isResult());
 
         // У нас номер бронирования - автонумератор Integer, менеджер последовательности, настало твое время, Валера
@@ -113,7 +98,7 @@ public class HotelServiceTest {
     public void getClientBookings() {
         BookingDtoRs actual=new BookingDtoRs(testBooking.getRoom(),testBooking.getBeginDate(),testBooking.getEndDate());
         Mockito.when(bookingMapper.CastFromEntity(testBooking)).thenReturn(actual);
-        List<BookingDtoRs> clientBookings = hotelService.getClientBookings(testClient.getName());
+        List<BookingDtoRs> clientBookings = bookingService.getClientBookings(testClient.getName());
         Assertions.assertEquals(1, clientBookings.size());
 
         BookingDtoRs expected = clientBookings.get(0);
@@ -127,7 +112,7 @@ public class HotelServiceTest {
         Booking bookingForDelete=new Booking(null,testRoom,beginDate,endDate,testClient);
         bookingDao.save(bookingForDelete);
 
-        Result result = hotelService.deleteBookingByNumber(bookingForDelete.getNumber());
+        Result result = bookingService.deleteBookingByNumber(bookingForDelete.getNumber());
         Assertions.assertTrue(result.isResult());
         Assertions.assertFalse(bookingDao.existsById(bookingForDelete.getNumber()));
     }

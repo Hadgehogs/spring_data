@@ -1,6 +1,7 @@
 package org.hotel.core;
 
 import lombok.Data;
+import lombok.experimental.UtilityClass;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 

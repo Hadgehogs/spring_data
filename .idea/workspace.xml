@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91029b4-ba2d-4ec7-89bb-d0647ca0d870" name="Changes" comment="Update surefire" />
+    <list default="true" id="c91029b4-ba2d-4ec7-89bb-d0647ca0d870" name="Changes" comment="add service">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/controller/RoomController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotel/service/RoomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/hotel/service/RoomServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotel/controller/HotelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotel/controller/BookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotel/core/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotel/core/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotel/service/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotel/service/BookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/hotel/service/HotelServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/hotel/service/BookingServiceTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,10 +79,11 @@
       <recent name="org.hotel.controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.hotel.service" />
+      <recent name="org.hotel.controller" />
       <recent name="org.hotel.dto" />
       <recent name="org.hotel.mapper" />
       <recent name="org.hotel.dao" />
-      <recent name="org.hotel.entity" />
     </key>
   </component>
   <component name="RunManager" selected="Application.App">
@@ -90,23 +100,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HotelServiceTest.deleteBookingByNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookingServiceTest and 4 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring_data" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.hotel.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.hotel.service" />
-      <option name="MAIN_CLASS_NAME" value="org.hotel.service.HotelServiceTest" />
-      <option name="METHOD_NAME" value="deleteBookingByNumber" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="org.hotel.service.BookingServiceTest" />
+        <pattern testClass="org.hotel.service.RoomServiceTest" />
+        <pattern testClass="org.hotel.mapper.BookingMapperTest" />
+        <pattern testClass="org.hotel.mapper.ClientMapperTest" />
+        <pattern testClass="org.hotel.mapper.RoomMapperTest" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HotelServiceTest.getClientBookings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookingServiceTest.deleteBookingByNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring_data" />
       <extension name="coverage">
         <pattern>
@@ -115,8 +123,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.hotel.service" />
-      <option name="MAIN_CLASS_NAME" value="org.hotel.service.HotelServiceTest" />
-      <option name="METHOD_NAME" value="getClientBookings" />
+      <option name="MAIN_CLASS_NAME" value="org.hotel.service.BookingServiceTest" />
+      <option name="METHOD_NAME" value="deleteBookingByNumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,10 +171,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.BookingServiceTest and 4 more" />
         <item itemvalue="JUnit.RoomMapperTest and 3 more" />
         <item itemvalue="Maven.spring_data [test]" />
-        <item itemvalue="JUnit.HotelServiceTest.deleteBookingByNumber" />
-        <item itemvalue="JUnit.HotelServiceTest.getClientBookings" />
+        <item itemvalue="JUnit.BookingServiceTest.deleteBookingByNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670442865530</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add service">
+      <created>1670587500696</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670587500696</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -234,7 +249,19 @@
     <MESSAGE value="Init commit" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Update surefire" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update surefire" />
+    <MESSAGE value="add service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add service" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/hotel/controller/BookingController.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/spring_data$App.ic" NAME="App Coverage Results" MODIFIED="1670347901182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
